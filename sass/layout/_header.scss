@@ -1,0 +1,83 @@
+@use '../abstracts' as *;
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: $header-bgc-light;
+    height: $header-height;
+    padding: 1rem 80px 0 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    box-shadow: 0px 0px 7px #999;
+    gap: 15px;
+    z-index: 2;
+}
+
+.avatar-name img{
+    transform: scaleX(-1);
+    background-color: white;
+    position: relative;
+    bottom: -5px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    object-position: -2px;
+}
+
+.avatar-name span{
+    font-family: $title-font;
+    font-size: $font-size-8;
+    color: $secondary-color;
+}
+
+header nav{
+    margin-left: auto;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+header nav ul li a{
+    font-size: $font-size-2;
+    text-decoration: none;
+    color: $accent-color-3;
+    font-weight: 500;
+}
+
+header nav ul li a:hover{
+    color: $accent-color-2;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: $secondary-color;
+    background-color: white;
+    border: 1px solid #aaa;
+    padding: 3px 6px 3px 6px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.social i{
+    cursor: pointer;
+    font-size: $font-size-2;
+}
+
+
+/*
+    hint on logos and everything
+    change "about" to something else - maybe - "A short brief about..",,
+    same padding in left and right throughout of all page
+    make the header links color more highlighted and maybe change fond - not loog good compare to other sites
+    - make animation on submit button - when send it shoe envelope fly to right
+    - check if (header nav, nav2 --> both inside header or need header nav, header nav) also, in sass check if I'm in current file so not need nesting.
+    - insert links
+    - make responsive
+*/

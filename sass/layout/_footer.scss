@@ -1,0 +1,38 @@
+footer{
+    background-color: #9BAEBC;
+    border-top: 2px solid #ccc;
+}
+
+footer .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+    padding: 10px;
+}
+
+footer div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.2em;
+}
+
+footer div div .fa-whatsapp{
+    font-weight: 600;
+}
+
+footer .credits{
+    background-color: #9BAEBC;
+    display: flex;
+    flex-direction: row;
+    padding: 2px 8px 5px;
+    border-top: 2px solid #ccc;
+}
+
+footer .credits .cr{
+    margin-left: auto;
+}
