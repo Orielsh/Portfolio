@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sass/style.css">
-    <title>Portfolio</title>
+    <title>Portfolio Project</title>
 </head>
 
 <body>
@@ -19,19 +19,20 @@
             <span>Oriel Shmuel</span>
         </div>
         <nav>
-            <ul>
-                <li><a href="#welcome">MAIN</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="">SERVICES</a></li>
-                <li><a href="">CONTACT</a></li>
+            <div class="icon" onclick="toggleNav()">&#9776;</div>
+            <ul id="navBar">
+                <li><a href="#welcome" onclick="toggleNav()">MAIN</a></li>
+                <li><a href="#about"onclick="toggleNav()">ABOUT</a></li>
+                <li><a href="#projects"onclick="toggleNav()">PROJECTS</a></li>
+                <li><a href="#contact"onclick="toggleNav()">CONTACT</a></li>
             </ul>
+            <div class="social">
+                <a href="https://www.facebook.com/oriel.shmuel" class="fa-brands fa-facebook"></a>
+                <a href="https://twitter.com/OrielSh" class="fa-brands fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/oriel-shmuel-395126124/" class="fa-brands fa-linkedin"></a>
+                <a href="https://github.com/Orielsh" class="fa-brands fa-github"></a>
+            </div>
         </nav>
-        <div class="social">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-        </div>
     </header>
     <div id="welcome" class="welcome">
         <h1> Hello, I'm Oriel <br> Welcome to My Full-Stack Journey</h1>
@@ -53,6 +54,7 @@
         <img src="assets/logos/flutter.png" alt="flutter-logo">
     </div>
     <div id="about" class="about">
+        <img src="./assets/images/profile.jpg" alt="profile-picture">
         <div>
             <h1>About</h1>
             <p>A passionate, skilled, and dedicated Full Stack Developer student with a strong foundation in Java
@@ -71,22 +73,89 @@
             </p>
             <button>Download CV</button>
         </div>
-        <img src="./assets/images/profile.jpg" alt="profile-picture">
+        
     </div>
-    <div class="projects">
+    <div id="projects" class="projects">
         <h1>Porjects</h1>
         <div class="flex-container">
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
+            <a href="./project_pages/p1.html">
+                <div>
+                    <img src="./assets/projects_snapshots/p1.jpg" alt="project - 1">
+                    <div class="overlay"></div>
+                </div>
+
+                <h1>Project Name</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ipsum autem maiores consequatur at
+                    saepe et itaque numquam corporis eius.
+                </p>
+                <span>Learn More</span>
+            </a>
+            <a href="./project_pages/p2.html">
+                <div>
+                    <img src="./assets/projects_snapshots/p2.jpg" alt="project - 2">
+                    <div class="overlay"></div>
+                </div>
+
+                <h1>Project Name</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dolore culpa dolor repudiandae
+                    laboriosam consectetur? Est.
+                </p>
+                <span>Learn More</span>
+            </a>
+            <a href="./project_pages/p3.html">
+                <div>
+                    <img src="./assets/projects_snapshots/p3.jpg" alt="project - 3">
+                    <div class="overlay"></div>
+                </div>
+
+                <h1>Project Name</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsam. Sit, reiciendis adipisci.
+                </p>
+                <span>Learn More</span>
+            </a>
+            <a href="./project_pages/p4.html">
+                <div>
+                    <img src="./assets/projects_snapshots/p4.jpg" alt="project - 4">
+                    <div class="overlay"></div>
+                </div>
+
+                <h1>Project Name</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum minus voluptatum consequatur, totam
+                    numquam adipisci corporis inventore rerum dolores.
+                </p>
+                <span>Learn More</span>
+            </a>
+            <a href="./project_pages/p5.html">
+                <div>
+                    <img src="./assets/projects_snapshots/p5.jpg" alt="project - 5">
+                    <div class="overlay"></div>
+                </div>
+                <h1>Project Name</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, nesciunt?</p>
+                <span>Learn More</span>
+            </a>
+            <a href="./project_pages/p6.html">
+                <div>
+                    <img src="./assets/projects_snapshots/p6.jpg" alt="project - 6">
+                    <div class="overlay"></div>
+                </div>
+                <h1>Project Name</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, nesciunt?</p>
+                <span>Learn More</span>
+            </a>
+            <a href="./project_pages/p7.html">
+                <div>
+                    <img src="./assets/projects_snapshots/p7.jpg" alt="project - 7">
+                    <div class="overlay"></div>
+                </div>
+                <h1>Project Name</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, nesciunt?</p>
+                <span>Learn More</span>
+            </a>
         </div>
     </div>
 
-    <div class="form">
+    <div id="contact" class="form">
         <div class="form-section">
             <h1>Let's talk</h1>
             <form action="">
@@ -133,6 +202,16 @@
             <p class="cr">כל הזכויות שמורות לאוריאל שמואל</p>
         </div>
     </footer>
+
+    <script>
+        const navBar = document.querySelector('#navBar');
+        function toggleNav(){
+            const mediaQuery = window.matchMedia('(max-width: 768px)')
+            if (mediaQuery.matches || navBar.classList.contains('navbar')) {
+                navBar.classList.toggle("navbar");
+            }
+        }
+    </script>
 </body>
 
 </html>

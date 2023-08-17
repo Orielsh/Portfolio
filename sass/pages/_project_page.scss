@@ -1,0 +1,61 @@
+@use '../abstracts' as *;
+
+body{
+    font-size: 1em;
+}
+
+.p_intro{
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    color: #2F4858;
+    align-items: center;
+    gap: 30px;
+    h1{
+        font-family: 'Heebo', sans-serif;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    p{
+        font-size: 2em;
+        text-align: center;
+
+    }
+    div{
+        display: flex;
+        gap: 30px;
+        margin-top: 50px;
+        a:hover{background-color: #eee;}
+        a{
+            font-weight: bold;
+            background-color: #fff;
+            border-radius: 10px;
+            font-size: 1em;
+            padding: 10px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        @include for-size(tablet){
+            flex-direction: column;
+        }
+    }
+}
+
+.project-skills{
+    justify-content: center;
+    gap: 80px;
+}
+
+.project-photo{
+    width: 70vw;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgb(128, 128, 128);
+    margin: 80px auto;
+    display: block;
+    @include for-size(tablet){
+        border-radius: 0;
+        width: 90vw;
+    }
+}

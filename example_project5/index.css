@@ -1,0 +1,388 @@
+.border{
+    border: 3px solid black !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-primary{
+    background: #0EE1E1 !important;
+}
+
+.c-gap{
+    gap: 180px;
+}
+
+.header{
+    text-align: right;
+    height: 75vh;
+    padding: 30px;
+}
+
+.whatsapp-image {
+    background-color: #fff;
+    padding: 10;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-image img{
+    width: 60%;
+    height: 60%;
+    margin-right: -2px;
+    margin-top: -3px;
+}
+
+
+.header h1{
+    font: normal normal 900 4.1em/97px Heebo;
+}
+
+.header p{
+    font: normal normal 600 1.25em/29px Heebo;
+    width: 43vw;
+    margin-left: auto;
+}
+
+.box-image {
+    width: 324px;
+    margin-right: 150px;
+}
+
+.square {
+    font-size: 2.5em;
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-box {
+    margin-top: 20px;
+    font: normal normal 900 30px/44px Heebo;
+    color: #0EE1E1;
+    text-align: center;
+}
+
+.text-box {
+    font: normal normal 600 15px/22px Heebo;
+    color: #000000;
+    text-align: center;
+}
+
+#row4 {
+    margin-top: 50px;
+    background: #F0FFFF 0% 0% no-repeat padding-box;
+}
+
+form label{
+    font-weight: bold;
+}
+
+.form-main-container {
+    padding: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: right;
+}
+
+.form-title {
+    text-align: right;
+    font: normal normal 900 46px/67px Heebo;
+    letter-spacing: 0px;
+    color: #090909;
+}
+
+.form-text {
+    text-align: right;
+    font: normal normal normal 15px/22px Heebo;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+form,
+.form-container,
+.map,
+.icons-container,
+.icon-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.icon-circle{
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.btn {
+    height: 51px;
+    background: #0EE1E1 0% 0% no-repeat padding-box;
+    text-align: center;
+    font: normal normal bold 20px/28px Heebo;
+    letter-spacing: 0.3px;
+    color: #000000;
+    margin-top: 2em;
+}
+
+.map>img {
+    padding: 5em;
+    text-align: center;
+}
+
+input,
+textarea {
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: 0;
+    border-bottom: 3px solid #0EE1E1;
+    resize: vertical;
+}
+
+input {
+    height: 51px;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em;
+}
+
+.contact{
+    display: flex;
+}
+
+/* 
+.self-end{
+    align-self: baseline;
+}
+
+.align-end{
+    align-items: baseline;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+.ltr {
+    direction: ltr;
+    text-align: left;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.title-header {
+    font: normal normal 900 44px/80px Heebo;
+    color: #000000;
+    
+}
+
+.text-header {
+    font: normal normal normal 20px/29px Heebo;
+    color: #000000;
+    width: 100%
+}
+
+.whatsapp>img {
+    background: transparent 0% 0% no-repeat padding-box;
+    background-color: white;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+#row1 {
+    padding-top: 90px;
+}
+
+
+#row6 {
+    height: 2em;
+}
+
+.fa {
+    padding-top: 50px;
+    font-size: 44px;
+}
+
+.content-header {
+    width: 60%;
+}
+
+*/
+
+.icon-circle {
+    padding: 10px 15px;
+    border-radius: 100px;
+    margin: 15px;
+}
+
+
+.icon-circle>.fa {
+    padding: 1px;
+    text-align: center;
+    font-size: 36px;
+}
+
+@media screen and (max-width:1750px) {
+    .c-gap {
+        gap: 130px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .c-gap{
+        gap: 80px;
+    }
+
+    .header h1{
+        font-size: 3.5em;
+    }
+
+    .box-image{
+        margin-right: 80px;
+        width: 300px;
+    }
+
+    .title-box {
+        font-size: 0.7em;
+    }
+
+        .map>img {
+            padding: 2em;
+        }
+    /* 
+    
+
+    .whatsapp {
+        display: none;
+    }
+
+    .content-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+    }
+
+    .text-header {
+        width: 80%;
+        text-align: right;
+    }
+
+    .cont {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .box-img {
+        width: 30%;
+    } */
+} 
+
+@media screen and (max-width:1200px) {
+
+    .c-gap {
+        gap: 80px;
+    }
+        
+    .box-image {
+        margin-right: 30px;
+        width: 250px;
+    }
+
+    .title-box {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width:992px) {
+.header {
+        height: auto;
+    }
+
+    .header h1{
+        font-size: 2.6em;
+    }
+
+    .box-image {
+        margin-right: 5px;
+        width: 250px;
+    }
+
+    .title-box{
+        margin: 0 -35px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .box-image {
+        margin-right: 0;
+        width: 150px;
+        margin-top: 30px;
+    }
+
+    .c-gap{
+        gap: 0;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header p{
+        font-size: 1.5em;
+        width: auto;
+    }
+
+    .icon-circle>.fa {
+                font-size: 1em;
+    }
+
+    .icon-circle {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .box-image {
+        width: 80px;
+        margin-top: 30px;
+    }
+
+    .header h1{
+        font-size: 1.5em;
+        line-height: 1.5em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        
+    }
+
+    .header p {
+        font-size: 1em;
+        margin-top: -20px;
+        line-height: 1.2em
+    }
+
+    .form-title{
+        font-size: 2em;
+    }
+}

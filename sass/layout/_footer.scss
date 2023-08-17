@@ -1,6 +1,12 @@
+@use '../abstracts/' as *;
+
 footer{
-    background-color: #9BAEBC;
+    background-color: #2c3e50;
     border-top: 2px solid #ccc;
+    color: white;
+    @include for-size(tablet){
+        font-size: 0.8em;
+    }
 }
 
 footer .info{
@@ -8,8 +14,11 @@ footer .info{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    gap: 100px;
-    padding: 10px;
+    padding: 8px;
+    flex-wrap: wrap;
+    @include for-size(phone){
+        gap: 30px;
+    }
 }
 
 footer div div{
@@ -18,19 +27,19 @@ footer div div{
     justify-content: center;
     align-items: center;
     gap: 5px;
-    font-size: 1.2em;
-}
-
-footer div div .fa-whatsapp{
-    font-weight: 600;
+    @include for-size(phone){
+        width: 50vw;
+    }
 }
 
 footer .credits{
-    background-color: #9BAEBC;
+    background-color: #2c3e50;
+    color: white;
     display: flex;
     flex-direction: row;
-    padding: 2px 8px 5px;
-    border-top: 2px solid #ccc;
+    padding: 2px 7px 5px;
+    border-top: 1px solid #ccc;
+    font-size: 0.8em;
 }
 
 footer .credits .cr{
