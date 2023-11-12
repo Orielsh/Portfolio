@@ -481,7 +481,7 @@ body {
   padding: 6em 60px;
   background-color: white;
   border-top: 1px solid #ccc;
-  background-image: url(../../assets/images/phone.jpg);
+  background-image: url(../assets/images/phone.jpg);
   background-position: 100px -70px;
   background-size: auto;
 }
