@@ -1,0 +1,129 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    text-align: right;
+    font-family: 'Heebo', sans-serif;
+}
+
+header{
+    background-image: url(./assets/images/Path\ 15@2x.png);
+    height: 54vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+form{
+    position: absolute;
+    background-color: #1A1A1AD4;
+    height: 60vh;
+    width: 30vw;
+    top: 15vh;
+    left: 55vw;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    justify-content: space-between;
+    font-size: 1.3em;
+}
+
+form h1{
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin: 0;
+    text-align: center;
+}
+
+form p{
+    color: #F9F9F9;
+    font-size: 0.8em;
+    letter-spacing:1px;
+    text-align: center;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+form div label{
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+form div input{
+    font-size: 1em;
+    height: 2.2em;
+    outline: none;
+    border: 1px solid #D31C75;
+    padding: 0 3px;
+}
+
+form button{
+    color: white;
+    background-color: #D31C75;
+    border: none;
+    outline: none;
+    width: 5vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 10vw;
+    padding: 0.5rem;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+@media (max-width: 880px) {
+    header{
+        height: 32vh;
+        background-image: url(./assets/images/path-mobile.png);
+    }
+
+    form{
+        width: 85vw;
+        height: 90vh;
+        top: 5vh;
+        left: 7.5vw;
+        padding: 4vh 3vw;
+        justify-content: space-between;
+        font-size: 1.5em;
+    }
+
+    form button{
+        width: auto;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    form {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 350px){
+
+    form{
+        font-size: 1.3em;
+    }
+}
+
+@media (max-height: 500px) {
+    form {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-height: 450px) {
+    form{
+        gap: 0;
+        font-size: 0.9em;
+    }
+}

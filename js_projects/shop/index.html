@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop using bootstrap example</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <header class="d-flex flex-column flex-md-row justify-content-space-between align-items-center gap-3 p-3">
+        <a class="navbar-brand m-md-0 m-auto" href="./index.html">
+            <img src="./assets/logo.png" class="logo" alt="logo">
+        </a>
+        
+
+        <form class="d-flex col-xl-4 col-lg-6 col-md-8 col-11 m-auto m-md-0 ms-md-auto border border-secondary rounded" role="search">
+            <div class="input-group">
+                <input type="search" class="form-control border-0" placeholder="Search" aria-label="Search">
+                <button class="search-button btn focus-ring" type="button" onclick="alert('search not work yet')">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </form>
+
+        <button class="cart-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <i class="bi bi-cart3"></i>
+            <span id="cartItemCount">
+                <!-- JS Content here -->
+            </span>
+        </button>
+    </header>
+
+    <div id="categoryListAnchor" class="category-list-anchor">
+        <div id="categoryListWrapper" class="category-list-wrapper hidden">
+            <!-- JS Content here -->
+        </div>
+        <button id="toggleCategoryListBtn" class="open-category-list-btn ms-1 d-flex flex-column align-items-center" type="button" aria-controls="category-list">
+            <i id="toggleCategoryListBtnIcon" class="bi bi-chevron-double-down"></i>
+            Categories
+        </button>
+    </div>
+
+    <div id="productList" class="product-list mt-5">
+        <!-- JS Content here -->
+    </div>
+
+    <nav id="pagination" aria-label="Page navigation">
+        <!-- JS Content here -->
+    </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div id="cartPane">
+            
+        </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

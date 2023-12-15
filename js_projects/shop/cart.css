@@ -1,0 +1,27 @@
+.offcanvas .offcanvas-header{
+    background: rgb(255, 255, 255);
+}
+
+.offcanvas{
+    overflow-y: scroll;
+}
+
+
+.offcanvas-body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px !important;
+
+}
+.cart-item{
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 1.2em;
+    border: 1px solid #bbb;
+}
+
+.cart-item i{
+    cursor: pointer;
+}

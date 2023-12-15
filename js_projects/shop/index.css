@@ -1,0 +1,199 @@
+@import url(cart.css);
+
+.logo{
+    height: 30px;
+}
+
+.search-button{
+    background-color: #fff !important;
+}
+
+.category-list-anchor{
+    position: absolute;
+}
+
+.category-list-wrapper{
+    border-top: 1px solid #ccc;
+    box-shadow: 0px 3px 3px #ddd;
+    transition: 500ms max-height linear;
+    max-height: 1350px;  /*Don't remove - transition height will not work without this*/
+    /* Since transition only start interpolate from max-height it need the decrease it
+    for each media query - let say actual height is 5 and max-height is 1350px so it will "delay" till reach
+    actual height. The solution is to decrease max-height respectively to each media-query or bind
+    the height of the content to this max-height via window-size listener or something else*/
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+}
+
+.category-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    font-size: 1.5em;
+    list-style-type: none;
+    justify-content: start;
+}
+
+.hidden{
+    max-height: 0 !important;
+}
+
+.category-list a{
+    color: #18255b;
+    text-decoration: none;
+   
+}
+
+.category-list li{
+    transition: transform 0.1s;
+}
+
+.category-list li:hover{
+    transform: scale(1.1);
+}
+
+.category-list a:hover{
+    color: #0c1d3f;
+}
+
+.open-category-list-btn i{
+    color: #fff;
+    transition: transform 500ms;
+}
+
+.rotate-180{
+    transform: rotate(-180deg);
+}
+
+.open-category-list-btn{
+    border-radius: 0 0 30px 30px;
+    border: none;
+    background-color: #e46814;
+    font-weight: bold;
+    padding: 10px;
+    z-index: 1;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+
+.product-list > ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 0;
+}
+
+.product-list > ul > li > a{
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    gap: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+    font-size: 1em;
+    justify-content: start;
+}
+
+.product-list > ul > li > a > h4{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.product-list > ul > li > a > span{
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.product-list > ul > li > a > p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2;
+    -webkit-box-orient: vertical;
+  
+}
+
+.thumbnail-wrapper{
+    overflow: hidden;
+    border-radius: 5px;
+    flex: 2;
+}
+
+.thumbnail{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.cart-button{
+    font-size: 1.5em;
+    color: black;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* Responsive */
+
+/* important to start low to high if work with min-width. the latter will take place */
+/*md, screen >= 768px*/
+@media (min-width: 768px){
+    .open-category-list-btn{
+        position: static;
+        transform: translateX(0);
+    }
+    
+    .category-list-wrapper{
+        max-height: 430px;
+    }
+
+    .category-list{
+        flex-direction: row;
+    }
+
+    .cart-button{
+        margin-left: auto;
+    }
+}
+
+
+/*md, screen >= 992px*/
+@media (min-width: 992px){
+    .category-list-wrapper{
+        max-height: 300px;
+    }
+}
+
+/*xl, screen >= 1200px*/
+@media (min-width: 1200px){
+    header form{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .category-list-wrapper{
+        max-height: 230px;
+    }
+}

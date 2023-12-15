@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom,#281EFF, #2DFF8C);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 1em;
+    font-family: 'Varela Round', sans-serif;
+    padding: 2em;
+}
+
+h1{
+    font-family: 'Satisfy', cursive;
+    color:white;
+    font-size: 10em;
+    font-weight: 300;
+    line-height: 1em;
+    text-align: center;
+}
+
+h2{
+    font-weight: 300;
+    font-size: 2em;
+    text-align: center;
+}
+
+p{
+        font-weight: 300;
+        font-size: 1em;
+        text-align: center;
+        color: #F9F9F9;
+}
+
+form{
+    margin-top: 1em;
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+form div label{
+    font-size: 1em;
+}
+
+form div input{
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    outline: none;
+    color: white;
+    padding: 3px 5px;
+    width: 26em;
+    font-size: 1.2em;
+   line-height: 2;
+}
+
+form button{
+    font-size: 1em;
+    width: 13em;
+    height: 3em;
+    border: 3px solid white;
+    color: #1C1C1C;
+    background-color: #FFFFFF;
+    align-self: flex-end;
+}
+
+@media (max-width: 1300px){
+    body{
+        font-size: 0.4em;
+        gap: 3em;
+    }
+}
+
+@media (max-width: 665px) {
+    h1{
+        font-size: 8em;
+    }
+
+    h2{
+        font-size: 2.5em;
+    }
+    p{
+        margin-bottom: 2em;
+        font-size: 2em;
+    }
+    form {
+        flex-direction: column;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+h2 {
+        font-size: 2em;
+    }
+}
