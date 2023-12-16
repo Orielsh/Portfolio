@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="frame-grid">
+        <div id="displayWrapper"><span id="display" class="display"></span></div>
+        <button onclick="onOff()">ON</button>
+        <button onclick="initialize()">AC</button>
+        <button onclick="initialize()">C</button>
+        <button onclick="append(this.innerText)">+</button>
+        <button onclick="append(this.innerText)">7</button>
+        <button onclick="append(this.innerText)">8</button>
+        <button onclick="append(this.innerText)">9</button>
+        <button onclick="append(this.innerText)">-</button>
+        <button onclick="append(this.innerText)">4</button>
+        <button onclick="append(this.innerText)">5</button>
+        <button onclick="append(this.innerText)">6</button>
+        <button onclick="append(this.innerText)">*</button>
+        <button onclick="append(this.innerText)">1</button>
+        <button onclick="append(this.innerText)">2</button>
+        <button onclick="append(this.innerText)">3</button>
+        <button onclick="append(this.innerText)">÷</button>
+        <button onclick="append(this.innerText)">0</button>
+        <button onclick="append(this.innerText)">.</button>
+        <button class="equal-button" onclick="submit()">=</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
