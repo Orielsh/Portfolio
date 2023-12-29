@@ -1,0 +1,212 @@
+:root{
+    --selection-height: 300px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body > div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 4em;
+    text-align: center;
+  
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 30px;
+    margin: auto;
+}
+
+.selection{
+    height: var(--selection-height);
+    width: var(--selection-height);
+    box-shadow: inset 0px 0px 5px rgb(5, 5, 5);
+    border-radius: 50%;
+    margin: auto;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.flip{
+    transform: scaleX(-1);
+}
+
+.vs-wrap{
+    width: 100px;
+    text-align: center;
+    align-self: center;
+}
+
+.vs{
+    filter: drop-shadow(0px 0px 5px #777777);
+    font-size: 3em;
+}
+
+.computer{
+    height: var(--selection-height);
+    width: 160px;
+    background: url(./assets/pc.png);
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 130px;
+    height: var(--selection-height);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.option{
+    width: 100px;
+    height: 33%;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.option:hover {
+    filter: drop-shadow(5px 5px 5px #999);
+}
+
+.rock{
+    background-image: url(./assets/rock.png);
+}
+
+.paper{
+    background-image: url(./assets/paper.png);
+    transform: rotate(90deg);
+}
+
+.sc{
+    background-image: url(./assets/sc.png);
+}
+
+.winner{
+    font-size: 3em;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    animation: color-change 1s infinite;
+    visibility: hidden;
+}
+
+@keyframes color-change {
+    0% {
+        color: green;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+@media (max-width: 1200px){
+
+    :root{
+        --selection-height: 250px;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    .container{
+        gap: 20px;
+    }
+
+    .vs-wrap{
+        width: 80px;
+    }
+
+    .option{
+        width: 80px;
+    }
+}
+
+@media (max-width: 992px){
+
+    :root{
+        --selection-height: 200px;
+    }
+
+
+    h1{
+        font-size: 2em;
+    }
+
+    .container{
+        gap: 10px;
+    }
+
+    .vs-wrap{
+        width: 70px;
+    }
+}
+
+@media (max-width: 768px){
+
+    :root{
+        --selection-height: 150px;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    .vs{
+        font-size: 2em;
+    }
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .options{
+        flex-direction: row;
+        width: 300px;
+    }
+}
+
+@media (max-width: 500px){
+
+    body > div{
+        padding: 10px;
+    }
+
+    .options{
+        
+        width: 200px;
+    }
+}

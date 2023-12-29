@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>12H Clock</h1>
+    <div class = "clock">
+        <div class="menu">
+            <div class = "digital">
+                <span id = "hours"></span>h
+                <span id = "minutes"></span>m
+                <span id = "seconds"></span>s
+            </div>
+           <div class="time-input">
+                <label>set time</label>
+                <input id="timeInputHour" type="number" min = "0" max="11">
+                <input id="timeInputMinute" type="number" min = "0" max="59">
+                <button id="setTime">Set</button>
+           </div>
+            <div class = "pace-range">
+                <label for="pace">Pace</label>
+                <input id="pace" type="range" name="pace" min="100" max = "1000" step="100" value="1000">
+                <span id="paceAmount">1000ms</span>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class = "analog">
+                <div class = "center"></div>
+                <div id = "secondHand" class="hand"></div>
+                <div id = "minuteHand" class="hand"></div>
+                <div id = "hourHand" class="hand"></div>
+                <div class="number zero">12</div>
+                <div class="number one">1</div>
+                <div class="number two">2</div>
+                <div class="number three">3</div>
+                <div class="number four">4</div>
+                <div class="number five">5</div>
+                <div class="number six">6</div>
+                <div class="number seven">7</div>
+                <div class="number eight">8</div>
+                <div class="number nine">9</div>
+                <div class="number ten">10</div>
+                <div class="number eleven">11</div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
